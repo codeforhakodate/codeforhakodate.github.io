@@ -1,0 +1,12 @@
+= partial "partials/header", locals: {page_url: "about"}
+.container
+  .media
+    - data.members.each do |member|
+      .media-left.media-middle
+        %img.media-object{src: member.gravatar}
+      .media-body
+        %h4= member.name
+        - unless member.github.nil?
+          %h4= member.github
+        - unless member.facebook.nil?
+          %h4= member.facebook
