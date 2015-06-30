@@ -46,6 +46,10 @@ set :js_dir, 'js'
 
 set :images_dir, 'images'
 
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.remote = 'git@github.com:codeforhakodate/dev.codeforhakodate.org.git'
+end
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
