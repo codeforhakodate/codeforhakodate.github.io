@@ -15,9 +15,9 @@
             %li= link_to "Home", "/"
               
           - if page_url == "about"
-            %li.active= link_to "私達について", "about"
+            %li.active= link_to "私達について", "/about"
           - else
-            %li= link_to "私達について", "about"
+            %li= link_to "私達について", "/about"
               
           - if page_url == "project"
             %li.active= link_to "プロジェクト", "#"
