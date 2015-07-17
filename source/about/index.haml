@@ -1,6 +1,24 @@
 = partial "partials/header", locals: {page_url: "about"}
 .container
   %h1 Code for Hakodate のミッションは、ICTを使って函館・道南地域の様々な問題を解決することです。
+  
+  %table.table
+    %tr
+      %td 名称
+      %td Code for Hakodate (コードフォーハコダテ)
+    %tr
+      %td 設立
+      %td 2014年8月30日
+    %tr
+      %td 形態
+      %td 非営利任意団体
+    %tr
+      %td 事務所
+      %td 郵便番号: 040-0011
+    %tr
+      %td
+      %td 住所: 北海道函館市本町25番13号五稜郭ビル7階
+    
   .media
     - data.members.each do |member|
       .media-left.media-middle
