@@ -26,6 +26,6 @@
       .media-body
         %h4= member.name
         - unless member.github.nil?
-          %h4= member.github
+          %i.fa.fa-github= link_to member.github, "https://github.com/#{member.github}"
         - unless member.facebook.nil?
-          %h4= member.facebook
+          %i.fa.fa-facebook= member.facebook
