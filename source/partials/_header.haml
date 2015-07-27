@@ -19,10 +19,10 @@
           - else
             %li= link_to "私達について", "/about"
               
-          - if page_url == "project"
-            %li.active= link_to "プロジェクト", "#"
+          - if page_url == "projects"
+            %li.active= link_to "プロジェクト", "/projects"
           - else
-            %li= link_to "プロジェクト", "#"
+            %li= link_to "プロジェクト", "/projects"
 
           - if page_url == "sponsor"
             %li.active= link_to "スポンサー", "#"
