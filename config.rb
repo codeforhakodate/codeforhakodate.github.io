@@ -1,3 +1,5 @@
+require "digest/md5"
+
 ###
 # Compass
 ###
@@ -31,6 +33,20 @@
 ###
 # Helpers
 ###
+helpers do
+  def github_url(user_id)
+    "https://github.com/#{user_id}"
+  end
+
+  def facebook_url(user_name)
+    "https://www.facebook.com/#{user_name}"
+  end
+
+  def gravatar_url(user_email)
+    md5_hash = Digest::MD5.hexdigest(user_email.downcase)
+    "https://secure.gravatar.com/avatar/#{md5_hash}"
+  end
+end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
