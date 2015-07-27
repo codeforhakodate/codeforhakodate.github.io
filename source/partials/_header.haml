@@ -24,6 +24,11 @@
           - else
             %li= link_to "プロジェクト", "#"
 
+          - if page_url == "sponsor"
+            %li.active= link_to "スポンサー", "#"
+          - else
+            %li= link_to "スポンサー", "#"
+            
           - if page_url == "press"
             %li.active= link_to "プレス", "http://press.codeforhakodate.org"
           - else
