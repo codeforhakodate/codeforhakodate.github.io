@@ -27,7 +27,10 @@
       .media-left.media-middle
         %img.media-object{src: member.gravatar}
       .media-body
-        %h4= member.name
+        %h4.media-heading= member.name
+        - unless member.introduce.nil?
+          = member.introduce
+          %br
         - unless member.github.nil?
           = link_to "", "https://github.com/#{member.github}" , class: "fa fa-github btn btn-warning", target: "_blank"
         - unless member.facebook.nil?
