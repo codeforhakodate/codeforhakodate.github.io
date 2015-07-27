@@ -26,6 +26,6 @@
       .media-body
         %h4= member.name
         - unless member.github.nil?
-          = link_to "", "https://github.com/#{member.github}" , class: "fa fa-github btn btn-primary", target: "_blank"
+          = link_to "", "https://github.com/#{member.github}" , class: "fa fa-github btn btn-warning", target: "_blank"
         - unless member.facebook.nil?
-          = link_to "", member.facebook, class: "fa fa-facebook btn btn-primary", target: "_blank"
+          = link_to "", member.facebook, class: "fa fa-facebook btn btn-facebook", target: "_blank"
