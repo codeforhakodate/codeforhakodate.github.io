@@ -28,4 +28,4 @@
         - unless member.github.nil?
           %i.fa.fa-github= link_to member.github, "https://github.com/#{member.github}"
         - unless member.facebook.nil?
-          %i.fa.fa-facebook= member.facebook
+          %i.fa.fa-facebook= link_to member.facebook, member.facebook
