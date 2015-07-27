@@ -44,7 +44,7 @@ helpers do
 
   def gravatar_url(user_email)
     md5_hash = Digest::MD5.hexdigest(user_email.downcase)
-    "https://secure.gravatar.com/avatar/#{md5_hash}"
+    "https://secure.gravatar.com/avatar/#{md5_hash}?s=64"
   end
 end
 
