@@ -23,9 +23,9 @@
       %td
       %td 住所: 北海道函館市本町25番13号 五稜郭ビル7階
     
-  .media
-    - data.members.each do |member|
-      .media-left.media-middle
+  - data.members.each do |member|
+    .media
+      .media-left.media-top
         %img.media-object{src: gravatar_url(member.gravatar)}
       .media-body
         %h4.media-heading= member.name
